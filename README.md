@@ -5,10 +5,10 @@ An implementation to the bingo kata problem
 npm start
 
 # About the solution
-it's built into services to each functionality and separate route
-bingo => GET api/bingo/getnumber
-card => GET api/card/generatecard
-player => POST api/player/checkplayer , parameter "player_id"
+it's built into services to each functionality and separate route<br/>
+bingo => GET api/bingo/getnumber<br/>
+card => GET api/card/generatecard<br/>
+player => POST api/player/checkplayer , parameter "player_id"<br/>
 
 # Put an .env file where it reads port ex
 PORT = 4000
