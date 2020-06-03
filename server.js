@@ -4,6 +4,7 @@ const cors = require('cors');
 const { json, urlencoded } = require('body-parser');
 const bingoRouter = require('./resources/bingo/bingo.router');
 const cardRouter = require('./resources/card/card.router');
+const playerRouter = require('./resources/player/player.router')
 const morgan = require('morgan');
 
 require('dotenv').config({path: __dirname + '/.env'});
@@ -14,6 +15,7 @@ app.use(json());
 app.use(urlencoded({ extended: true }));
 app.use('/api/bingo',bingoRouter);
 app.use('/api/card',cardRouter);
+app.use('/api/player',playerRouter);
 
 // Listen to the App Engine-specified port, or 8080 otherwise
 const PORT = process.env.PORT || 8080;
